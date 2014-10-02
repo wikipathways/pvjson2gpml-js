@@ -1,0 +1,16 @@
+{
+  "name": "pvjson1.0-to-gpml2013a",
+  "version": "0.0.0",
+  "description": "Convert biological pathway data from pvjson (json) version 1.0 to GPML (XML) version 2013a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WikiPathways team",
+  "license": "Apache 2",
+  "dependencies": {
+    "ractive": "~0.5.8",
+    "pretty-data": "~0.40.0"
+  },
+  "devDependencies": {}
+}

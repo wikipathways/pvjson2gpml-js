@@ -1,0 +1,81 @@
+<script id='template' type='text/ractive'>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="{{pvjson.displayName}}" Organism="{{pvjson.organism}}">
+  {{#each pvjson.comment:num}}
+	  <Comment Source="{{source}}">{{textContent}}</Comment>
+  {{/each}}
+  {{#each pvjson.xrefs:num}}
+	  <BiopaxRef>{{pvjson.xrefs[num]}}</BiopaxRef>
+  {{/each}}
+  <Graphics BoardWidth="pvjson.image.width" BoardHeight="pvjson.image.height" />
+  {{#each pvjson.elements:num}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:DataNode'}}
+		  <DataNode TextLabel="{{textContent}}" GraphId="{{id}}" Type="{{type}}">
+			  <Graphics CenterX="{{x + height / 2}}" CenterY="{{y + width / 2}}" Width="{{width}}" Height="{{height}}" ZOrder="{{zIndex}}" FontWeight="{{fontWeight}}" FillColor="{{backgroundColor}}" FontSize="{{parseFloat(fontSize)}}" Valign="{{verticalAlign}}" ShapeType="{{shape}}" />
+			  <Xref Database="{{entityReference.split('/')[entityReference.split('/').length - 2]}}" ID="{{entityReference.split('/')[entityReference.split('/').length - 1]}}" />
+		  </DataNode>
+	  {{/if}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:Interaction'}}
+		  <Interaction GraphId="{{id}}">
+			  <Graphics ZOrder="{{zIndex}}" LineThickness="{{borderWidth}}">
+				  {{#each pvjson.elements[num].point}}
+					  <Point X="{{x}}" Y="{{y}}" GraphRef="{{f6a60}}" RelX="{{anchor[0]}}" RelY="{{anchor[0]}}" ArrowHead="{{markerStart || markerEnd}}" />
+				  {{/each}}
+			  </Graphics>
+			  <Xref Database="{{entityReference.split('/')[entityReference.split('/').length - 2]}}" ID="{{entityReference.split('/')[entityReference.split('/').length - 1]}}" />
+		  </Interaction>
+	  {{/if}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:GraphicalLine'}}
+		  <GraphicalLine GraphId="{{id}}">
+			  <Graphics ZOrder="{{zIndex}}" LineThickness="{{borderWidth}}">
+				  {{#each pvjson.elements[num].point}}
+					  <Point X="{{x}}" Y="{{y}}" GraphRef="{{f6a60}}" RelX="{{anchor[0]}}" RelY="{{anchor[0]}}" ArrowHead="{{markerStart || markerEnd}}" />
+				  {{/each}}
+			  </Graphics>
+		  </GraphicalLine>
+	  {{/if}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:Label'}}
+		  <Label TextLabel="{{textContent}}" GraphId="{{id}}">
+			  <Graphics CenterX="{{x + height / 2}}" CenterY="{{y + width / 2}}" Width="{{width}}" Height="{{height}}" ZOrder="{{zIndex}}" FontWeight="{{fontWeight}}" FillColor="{{backgroundColor}}" FontSize="{{parseFloat(fontSize)}}" Valign="{{verticalAlign}}" ShapeType="{{shape}}" />
+		  </Label>
+	  {{/if}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:Shape'}}
+		  <Shape GraphId="{{id}}">
+			  {{#if pvjson.elements[num].type === 'CellularComponent'}}
+				  <Attribute Key="org.pathvisio.CellularComponentProperty" Value="{{entityReference}}" />
+			  {{/if}}
+			  {{#if pvjson.elements[num].shape.indexOf('-double') > -1}}
+				  <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+			  {{/if}}
+			  <Graphics CenterX="{{x + height / 2}}" CenterY="{{y + width / 2}}" Width="{{width}}" Height="{{height}}" ZOrder="{{zIndex}}" FontWeight="{{fontWeight}}" FillColor="{{backgroundColor}}" FontSize="{{parseFloat(fontSize)}}" Valign="{{verticalAlign}}" ShapeType="{{shape}}" Rotation="rotation" />
+		  </Shape>
+	  {{/if}}
+	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:Group'}}
+		  <Group GroupId="{{id}}" GraphId="{{id}}" Style="Group" TextLabel="Group object" />
+	  {{/if}}
+  {{/each}}
+  <InfoBox CenterX="0" CenterY="0" />
+  <Legend CenterX="0" CenterY="0" />
+  <Biopax>
+	  {{#each pvjson.elements:num}}
+		  {{#if pvjson.elements[num].type === 'PublicationXref'}}
+			  <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:ID="{{id}}">
+				  <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{dbId}}</bp:id>
+				  <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{dbName}}</bp:db>
+				  <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{title}}</bp:title>
+				  <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{source}}</bp:source>
+				  <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{year}}</bp:year>
+				  {{#each pvjson.elements[num].author:num}}
+					  <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{name}}</bp:author>
+				  {{/each}}
+			  </bp:PublicationXref>
+		  {{/if}}
+		  {{#if pvjson.elements[num].type === 'ControlledVocabulary'}}
+			  <bp:ControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+				  <bp:term xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{term}}</bp:term>
+				  <bp:xref xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{id}}</bp:xref>
+			  </bp:ControlledVocabulary>
+		  {{/if}}
+	  {{/each}}
+  </Biopax>
+</Pathway>
+</script>
