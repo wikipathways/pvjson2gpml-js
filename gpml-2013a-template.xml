@@ -6,7 +6,7 @@
   {{#each pvjson.xrefs:num}}
 	  <BiopaxRef>{{pvjson.xrefs[num]}}</BiopaxRef>
   {{/each}}
-  <Graphics BoardWidth="pvjson.image.width" BoardHeight="pvjson.image.height" />
+  <Graphics BoardWidth="{{pvjson.image.width}}" BoardHeight="{{pvjson.image.height}}" />
   {{#each pvjson.elements:num}}
 	  {{#if pvjson.elements[num]['gpml:element'] === 'gpml:DataNode'}}
 		  <DataNode TextLabel="{{textContent}}" GraphId="{{id}}" Type="{{type}}">

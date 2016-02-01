@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Pathway 
+    xmlns="http://pathvisio.org/GPML/2013a" Name="Statin Pathway" Organism="Mus musculus">
+    <BiopaxRef>ba0</BiopaxRef>
+    <Graphics BoardWidth="pvjson.image.width" BoardHeight="pvjson.image.height" />
+    <DataNode TextLabel="Free FA" GraphId="fa9" Type="SmallMolecule">
+      <Graphics CenterX="529.6494012327505" CenterY="147.3902580770557" Width="65.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+      <Xref Database="chebi" ID="CHEBI:35366" />
+    </DataNode>
+    <DataNode TextLabel="Phospholipid" GraphId="d24" Type="SmallMolecule">
+      <Graphics CenterX="714" CenterY="222.66666666666669" Width="105.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+      <Xref Database="chebi" ID="CHEBI:16247" />
+    </DataNode>
+    <DataNode TextLabel="Triglycerides" GraphId="c66" Type="SmallMolecule">
+      <Graphics CenterX="714" CenterY="255.00000000000003" Width="105.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+      <Xref Database="chebi" ID="CHEBI:17855" />
+    </DataNode>
+    <DataNode TextLabel="Hmgcr" GraphId="e04" Type="Dna">
+      <Graphics CenterX="185.33333333333334" CenterY="184.4873208379272" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="15357" />
+    </DataNode>
+    <DataNode TextLabel="Cyp7a1" GraphId="da7" Type="Dna">
+      <Graphics CenterX="396.6666666666667" CenterY="184.4873208379272" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="13122" />
+    </DataNode>
+    <DataNode TextLabel="Soat1" GraphId="e6e" Type="Dna">
+      <Graphics CenterX="434.1904761904762" CenterY="219.4761904761904" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="20652" />
+    </DataNode>
+    <DataNode TextLabel="Mttp" GraphId="f8e" Type="Dna">
+      <Graphics CenterX="665.380952380953" CenterY="293.9523809523805" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="17777" />
+    </DataNode>
+    <DataNode TextLabel="Dgat1" GraphId="be0" Type="Dna">
+      <Graphics CenterX="654.376506134835" CenterY="142.73746377756174" Width="61" Height="21.000000000000014" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="13350" />
+    </DataNode>
+    <DataNode TextLabel="Ldlr" GraphId="d72" Type="Dna">
+      <Graphics CenterX="211.66666666666666" CenterY="350.3333333333333" Width="60.99999999999997" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="16835" />
+    </DataNode>
+    <DataNode TextLabel="Lrp1" GraphId="a36" Type="Dna">
+      <Graphics CenterX="357.1904761904765" CenterY="350.3333333333333" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="16971" />
+    </DataNode>
+    <DataNode TextLabel="Lpl" GraphId="c3e" Type="Dna">
+      <Graphics CenterX="454.3333333333335" CenterY="437.66666666666697" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="16956" />
+    </DataNode>
+    <DataNode TextLabel="Lipc" GraphId="af7" Type="Dna">
+      <Graphics CenterX="235.5238095238094" CenterY="439.57142857142884" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="15450" />
+    </DataNode>
+    <DataNode TextLabel="Cetp" GraphId="b7b" Type="Dna">
+      <Graphics CenterX="357.1904761904765" CenterY="482.2380952380956" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="1071" />
+    </DataNode>
+    <DataNode TextLabel="Lcat" GraphId="f82" Type="Dna">
+      <Graphics CenterX="357.1904761904765" CenterY="509.6190476190473" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="16816" />
+    </DataNode>
+    <DataNode TextLabel="Abca1" GraphId="d75" Type="Dna">
+      <Graphics CenterX="347.1904761904764" CenterY="591.0000000000001" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11303" />
+    </DataNode>
+    <DataNode TextLabel="Pltp" GraphId="c4e" Type="Dna">
+      <Graphics CenterX="542.809523809524" CenterY="511.1904761904762" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="18830" />
+    </DataNode>
+    <DataNode TextLabel="Apoa1" GraphId="e58" Type="Dna">
+      <Graphics CenterX="485.761904761905" CenterY="589.047619047619" Width="61.00000000000006" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11806" />
+    </DataNode>
+    <DataNode TextLabel="Apoa4" GraphId="b95" Type="Dna">
+      <Graphics CenterX="560.4761904761907" CenterY="589.047619047619" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11808" />
+    </DataNode>
+    <DataNode TextLabel="Apoc1" GraphId="f9d" Type="Dna">
+      <Graphics CenterX="719.9999999999987" CenterY="429.9999999999998" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11812" />
+    </DataNode>
+    <DataNode TextLabel="Apoe" GraphId="fad" Type="Dna">
+      <Graphics CenterX="719.9999999999987" CenterY="449.9999999999998" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11816" />
+    </DataNode>
+    <DataNode TextLabel="Apoc2" GraphId="a64" Type="Dna">
+      <Graphics CenterX="719.9999999999987" CenterY="469.9999999999998" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11813" />
+    </DataNode>
+    <DataNode TextLabel="Apoc3" GraphId="a5e" Type="Dna">
+      <Graphics CenterX="719.9999999999987" CenterY="409.9999999999998" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="11814" />
+    </DataNode>
+    <DataNode TextLabel="Scarb1" GraphId="c40" Type="Dna">
+      <Graphics CenterX="111" CenterY="350.3333333333333" Width="61" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="ncbigene" ID="20778" />
+    </DataNode>
+    <DataNode TextLabel="Cholic acid" GraphId="ecd6d" Type="SmallMolecule">
+      <Graphics CenterX="294" CenterY="160" Width="125" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="hmdb" ID="HMDB00619" />
+    </DataNode>
+    <DataNode TextLabel="Acetyl-CoA" GraphId="f6a60" Type="SmallMolecule">
+      <Graphics CenterX="46.07717750826919" CenterY="288" Width="125" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="hmdb" ID="HMDB01206" />
+    </DataNode>
+    <DataNode TextLabel="Cholesterol" GraphId="ba3f8" Type="SmallMolecule">
+      <Graphics CenterX="295" CenterY="288" Width="125" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="hmdb" ID="HMDB00067" />
+    </DataNode>
+    <DataNode TextLabel="Cholesterol" GraphId="afd21" Type="SmallMolecule">
+      <Graphics CenterX="255" CenterY="667" Width="81" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="hmdb" ID="HMDB00067" />
+    </DataNode>
+    <DataNode TextLabel="Cholesterol Ester" GraphId="a24b2" Type="SmallMolecule">
+      <Graphics CenterX="532" CenterY="288" Width="125" Height="21" ZOrder="32768" FontWeight="" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="chebi" ID="CHEBI:17002" />
+    </DataNode>
+    <DataNode TextLabel="Statin" GraphId="e4e59" Type="SmallMolecule">
+      <Graphics CenterX="68.07717750826917" CenterY="194.4873208379272" Width="81.00000000000001" Height="21" ZOrder="32768" FontWeight="bold" FillColor="#ffffff" FontSize="10" Valign="middle" ShapeType="rectangle" />
+      <Xref Database="chebi" ID="CHEBI:35664" />
+    </DataNode>
+    <Interaction GraphId="ida14b6441">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id71c845e6">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id5693288b">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id2d08a86c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idaf2a986">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id29bceef9">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idad027bce">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id1e7f7971">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id436f346c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id6ca21b57">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="ide0f0a17c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="ida9302f64">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id22e28379">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id8511f007">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idc6341a29">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idd2373b45">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id9d3f4991">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id7808eadf">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="iddc51ad2b">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id5b3e22b6">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id37ab2a8b">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id1e5724f9">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="b008b">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idfb69689">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id6eef87c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id7b27d8">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id7fb4b630">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="ide734686c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idfd21ef1c">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="idd98747a1">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="id54cd1002">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Interaction GraphId="ida73c84b7">
+      <Graphics ZOrder="12288" LineThickness="1"></Graphics>
+      <Xref Database="" ID="" />
+    </Interaction>
+    <Label TextLabel="Cell Membrane" GraphId="e46">
+      <Graphics CenterX="804.9285714285727" CenterY="111.26190476190483" Width="103.33333333333337" Height="17" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="10" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="Liver cell" GraphId="b93">
+      <Graphics CenterX="829.5" CenterY="347.1666666666667" Width="74.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="LDL" GraphId="d57">
+      <Graphics CenterX="177.5" CenterY="392.5" Width="38.33333333333334" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="IDL" GraphId="c83">
+      <Graphics CenterX="371.02380952380986" CenterY="389.5" Width="32.333333333333314" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="VLDL" GraphId="fca">
+      <Graphics CenterX="562.5238095238099" CenterY="398" Width="49.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="HDL" GraphId="cdf">
+      <Graphics CenterX="469.357142857143" CenterY="494.92857142857156" Width="40.333333333333314" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="Tissues" GraphId="f20">
+      <Graphics CenterX="337.8518518518517" CenterY="701.1759259259251" Width="66.33333333333331" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Label TextLabel="Plasma" GraphId="fbb">
+      <Graphics CenterX="792.5370370370366" CenterY="472.87301587301545" Width="62.33333333333337" Height="20" ZOrder="28672" FontWeight="bold" FillColor="transparent" FontSize="12" Valign="middle" ShapeType="none" />
+    </Label>
+    <Shape GraphId="a0e3c">
+      <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus" />
+      <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+      <Graphics CenterX="203.79100529100532" CenterY="745.5667989417977" Width="291.6944444444449" Height="116.92592592592632" ZOrder="-4" FontWeight="" FillColor="transparent" FontSize="10" Valign="middle" ShapeType="ellipse-double" Rotation="rotation" />
+    </Shape>
+    <Shape GraphId="e459e">
+      <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell" />
+      <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+      <Graphics CenterX="151.8809523809528" CenterY="520.2499999999998" Width="875.8809523809523" Height="252.52380952380952" ZOrder="-2" FontWeight="" FillColor="transparent" FontSize="10" Valign="middle" ShapeType="rounded-rectangle-double" Rotation="rotation" />
+    </Shape>
+    <Group GroupId="f90e3" GraphId="f90e3" Style="Group" TextLabel="Group object" />
+    <InfoBox CenterX="0" CenterY="0" />
+    <Legend CenterX="0" CenterY="0" />
+    <Biopax>
+      <bp:PublicationXref 
+        xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" 
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:ID="ba0">
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:id>
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:db>
+        <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:title>
+        <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:source>
+        <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:year>
+      </bp:PublicationXref>
+    </Biopax>
+  </Pathway>

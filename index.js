@@ -14,5 +14,5 @@ var ractive = new Ractive({
 var gpml = ractive.toHTML();
 gpml = pd.xml(gpml);
 var lineDelimitedGpml = gpml.split('\n');
-gpml = lineDelimitedGpml.slice(1, lineDelimitedGpml.length - 1).join('\n');
+gpml = '<?xml version="1.0" encoding="UTF-8"?>\n' + lineDelimitedGpml.slice(1, lineDelimitedGpml.length - 1).join('\n');
 console.log(gpml);
